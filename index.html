@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diya Kirana — Your Trusted Neighborhood Store</title>
+    <meta name="description" content="Diya Kirana offers fresh groceries, daily essentials, snacks, beverages and household items at the best prices. Shop quality products from your trusted neighborhood store.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">🪔</span>
+                <div>
+                    <span class="logo-name">Diya Kirana</span>
+                    <span class="logo-tagline">Fresh &amp; Trusted</span>
+                </div>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#offers">Offers</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="search-toggle" id="searchToggle" aria-label="Search">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="cart-btn" id="cartBtn" aria-label="Cart">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+        <!-- Search Bar -->
+        <div class="search-bar" id="searchBar">
+            <div class="container">
+                <input type="text" id="searchInput" placeholder="Search for groceries, snacks, beverages..." autocomplete="off">
+                <button class="search-close" id="searchClose"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <span class="hero-badge">🌿 100% Fresh &amp; Quality Products</span>
+                <h1>Your Trusted<br><span class="gradient-text">Neighborhood</span><br>Kirana Store</h1>
+                <p class="hero-desc">Discover premium groceries, daily essentials, and household items — all delivered fresh to your doorstep at unbeatable prices.</p>
+                <div class="hero-btns">
+                    <a href="#products" class="btn btn-primary">
+                        <i class="fas fa-shopping-basket"></i> Shop Now
+                    </a>
+                    <a href="#offers" class="btn btn-outline">
+                        <i class="fas fa-tags"></i> Today's Offers
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">5000+</span>
+                        <span class="stat-label">Products</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">10K+</span>
+                        <span class="stat-label">Happy Customers</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Support</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=600&q=80" alt="Fresh groceries and vegetables" class="hero-img">
+                    <div class="floating-card card-1">
+                        <i class="fas fa-truck"></i>
+                        <span>Free Delivery</span>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fas fa-leaf"></i>
+                        <span>100% Fresh</span>
+                    </div>
+                    <div class="floating-card card-3">
+                        <i class="fas fa-award"></i>
+                        <span>Best Quality</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MARQUEE BANNER ===== -->
+    <div class="marquee-banner">
+        <div class="marquee-track">
+            <span>🔥 Flat 20% OFF on First Order</span>
+            <span>🚚 Free Delivery Above ₹499</span>
+            <span>🌾 Fresh Vegetables Daily</span>
+            <span>💰 Best Prices Guaranteed</span>
+            <span>🎁 Weekly Special Combos</span>
+            <span>🔥 Flat 20% OFF on First Order</span>
+            <span>🚚 Free Delivery Above ₹499</span>
+            <span>🌾 Fresh Vegetables Daily</span>
+            <span>💰 Best Prices Guaranteed</span>
+            <span>🎁 Weekly Special Combos</span>
+        </div>
+    </div>
+
+    <!-- ===== CATEGORIES ===== -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Browse Categories</span>
+                <h2>Shop by <span class="gradient-text">Category</span></h2>
+                <p>Find everything you need, organized for your convenience</p>
+            </div>
+            <div class="category-grid">
+                <div class="category-card" data-category="fruits">
+                    <div class="category-icon">
+                        <img src="https://images.unsplash.com/photo-1619566636858-adf3ef46400b?w=300&q=80" alt="Fresh Fruits">
+                    </div>
+                    <h3>Fresh Fruits</h3>
+                    <span class="category-count">120+ items</span>
+                </div>
+                <div class="category-card" data-category="vegetables">
+                    <div class="category-icon">
+                        <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=300&q=80" alt="Vegetables">
+                    </div>
+                    <h3>Vegetables</h3>
+                    <span class="category-count">200+ items</span>
+                </div>
+                <div class="category-card" data-category="dairy">
+                    <div class="category-icon">
+                        <img src="https://images.unsplash.com/photo-1628088062854-d1870b4553da?w=300&q=80" alt="Dairy Products">
+                    </div>
+                    <h3>Dairy</h3>
+                    <span class="category-count">80+ items</span>
+                </div>
+                <div class="category-card" data-category="snacks">
+                    <div class="category-icon">
+                        <img src="https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=300&q=80" alt="Snacks">
+                    </div>
+                    <h3>Snacks</h3>
+                    <span class="category-count">350+ items</span>
+                </div>
+                <div class="category-card" data-category="beverages">
+                    <div class="category-icon">
+                        <img src="https://images.unsplash.com/photo-1625772299848-391b6a87d7b3?w=300&q=80" alt="Beverages">
+                    </div>
+                    <h3>Beverages</h3>
+                    <span class="category-count">150+ items</span>
+                </div>
+                <div class="category-card" data-category="spices">
+                    <div class="category-icon">
+                        <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=300&q=80" alt="Spices">
+                    </div>
+                    <h3>Spices</h3>
+                    <span class="category-count">90+ items</span>
+                </div>
+                <div class="category-card" data-category="grains">
+                    <div class="category-icon">
+                        <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?w=300&q=80" alt="Rice & Grains">
+                    </div>
+                    <h3>Rice &amp; Grains</h3>
+                    <span class="category-count">60+ items</span>
+                </div>
+                <div class="category-card" data-category="household">
+                    <div class="category-icon">
+                        <img src="https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=300&q=80" alt="Household">
+                    </div>
+                    <h3>Household</h3>
+                    <span class="category-count">180+ items</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PRODUCTS ===== -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Our Products</span>
+                <h2>Featured <span class="gradient-text">Products</span></h2>
+                <p>Handpicked selection of our best-selling items</p>
+            </div>
+            <div class="product-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="fruits">Fruits</button>
+                <button class="filter-btn" data-filter="vegetables">Vegetables</button>
+                <button class="filter-btn" data-filter="dairy">Dairy</button>
+                <button class="filter-btn" data-filter="snacks">Snacks</button>
+                <button class="filter-btn" data-filter="beverages">Beverages</button>
+                <button class="filter-btn" data-filter="spices">Spices</button>
+            </div>
+            <div class="product-grid" id="productGrid">
+                <!-- Products injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== OFFERS ===== -->
+    <section class="offers" id="offers">
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-badge">Special Deals</span>
+                <h2>Today's <span class="gradient-text">Offers</span></h2>
+                <p>Don't miss out on these incredible deals!</p>
+            </div>
+            <div class="offers-grid">
+                <div class="offer-card offer-big">
+                    <img src="https://images.unsplash.com/photo-1498579809087-ef1e558fd1da?w=600&q=80" alt="Fresh Fruits Combo" loading="lazy">
+                    <div class="offer-overlay">
+                        <span class="offer-discount">30% OFF</span>
+                        <h3>Fresh Fruits Combo</h3>
+                        <p>Get seasonal fruits basket at amazing prices</p>
+                        <a href="#products" class="btn btn-primary btn-sm">Shop Now</a>
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <img src="https://images.unsplash.com/photo-1563636619-e9143da7973b?w=400&q=80" alt="Dairy Essentials" loading="lazy">
+                    <div class="offer-overlay">
+                        <span class="offer-discount">20% OFF</span>
+                        <h3>Dairy Essentials</h3>
+                        <p>Milk, curd, butter & more</p>
+                        <a href="#products" class="btn btn-primary btn-sm">Shop Now</a>
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <img src="https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=400&q=80" alt="Spice Collection" loading="lazy">
+                    <div class="offer-overlay">
+                        <span class="offer-discount">25% OFF</span>
+                        <h3>Spice Collection</h3>
+                        <p>Premium Indian spices combo</p>
+                        <a href="#products" class="btn btn-primary btn-sm">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== WHY CHOOSE US ===== -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Why Choose Us</span>
+                <h2>Why People Love <span class="gradient-text">Diya Kirana</span></h2>
+                <p>We go above and beyond to bring you the best shopping experience</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-seedling"></i></div>
+                    <h3>Farm Fresh</h3>
+                    <p>Products sourced directly from local farms, ensuring maximum freshness and quality.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-rupee-sign"></i></div>
+                    <h3>Best Prices</h3>
+                    <p>Competitive pricing with regular offers and discounts on all your daily essentials.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-shipping-fast"></i></div>
+                    <h3>Fast Delivery</h3>
+                    <p>Quick and reliable delivery to your doorstep. Free delivery on orders above ₹499.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Quality Assured</h3>
+                    <p>Every product goes through strict quality checks before reaching your hands.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Testimonials</span>
+                <h2>What Our <span class="gradient-text">Customers</span> Say</h2>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"Diya Kirana has become my go-to store. The quality of vegetables and fruits is always top-notch. Their delivery is super fast!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RS</div>
+                        <div>
+                            <strong>Ramesh Sharma</strong>
+                            <span>Regular Customer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"Best prices in the neighborhood! I love their spice collection and the weekly combo offers save me a lot of money every month."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">PP</div>
+                        <div>
+                            <strong>Priya Patel</strong>
+                            <span>Loyal Customer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>"The customer service is exceptional. They always make sure I get exactly what I need. Truly a store that cares about its customers."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AK</div>
+                        <div>
+                            <strong>Anita Kumari</strong>
+                            <span>3+ Years Customer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about" id="about">
+        <div class="container about-grid">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=600&q=80" alt="Inside Diya Kirana Store" loading="lazy">
+                <div class="about-badge">
+                    <span class="about-years">15+</span>
+                    <span>Years of Trust</span>
+                </div>
+            </div>
+            <div class="about-content">
+                <span class="section-badge">Our Story</span>
+                <h2>Welcome to <span class="gradient-text">Diya Kirana</span></h2>
+                <p>For over 15 years, Diya Kirana has been serving our community with love, trust, and the finest quality products. What started as a small neighborhood shop has grown into a beloved store that thousands of families rely on every day.</p>
+                <p>We believe in the power of fresh, quality products at fair prices. Our team personally selects every item to ensure you get nothing but the best for your family.</p>
+                <div class="about-features">
+                    <div class="about-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Handpicked Quality Products</span>
+                    </div>
+                    <div class="about-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Locally Sourced Fresh Produce</span>
+                    </div>
+                    <div class="about-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Family-Owned &amp; Operated</span>
+                    </div>
+                    <div class="about-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Trusted by 10,000+ Families</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Get In Touch</span>
+                <h2>Contact <span class="gradient-text">Us</span></h2>
+                <p>We'd love to hear from you. Reach out anytime!</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>Visit Us</h4>
+                            <p>Main Bazaar Road, Ward No. 5<br>Diyashah, Nepal</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>+977 9800000000<br>+977 9811111111</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p>info@diyakirana.com<br>orders@diyakirana.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                        <div>
+                            <h4>Store Hours</h4>
+                            <p>Mon – Sat: 7:00 AM – 9:00 PM<br>Sunday: 8:00 AM – 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="contactName" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="contactEmail" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="contactSubject" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="contactMessage" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">🪔</span>
+                        <div>
+                            <span class="logo-name">Diya Kirana</span>
+                            <span class="logo-tagline">Fresh &amp; Trusted</span>
+                        </div>
+                    </a>
+                    <p>Your trusted neighborhood kirana store serving fresh groceries, daily essentials, and household items for over 15 years.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#offers">Offers</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#categories">Fresh Fruits</a></li>
+                        <li><a href="#categories">Vegetables</a></li>
+                        <li><a href="#categories">Dairy Products</a></li>
+                        <li><a href="#categories">Snacks</a></li>
+                        <li><a href="#categories">Beverages</a></li>
+                        <li><a href="#categories">Spices</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to get notified about our latest offers and deals.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Diya Kirana. All rights reserved. Made with ❤️ in Diyashah</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== CART SIDEBAR ===== -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3><i class="fas fa-shopping-bag"></i> Your Cart</h3>
+            <button class="cart-close" id="cartClose"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <div class="cart-empty" id="cartEmpty">
+                <i class="fas fa-shopping-basket"></i>
+                <p>Your cart is empty</p>
+                <a href="#products" class="btn btn-primary btn-sm" id="startShopping">Start Shopping</a>
+            </div>
+        </div>
+        <div class="cart-footer" id="cartFooter" style="display:none;">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">₹0</span>
+            </div>
+            <button class="btn btn-primary btn-full" id="checkoutBtn">
+                <i class="fas fa-lock"></i> Checkout
+            </button>
+        </div>
+    </div>
+
+    <!-- ===== TOAST ===== -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- ===== BACK TO TOP ===== -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
