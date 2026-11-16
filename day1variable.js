@@ -31,16 +31,20 @@ eg-  x = 4 (value assign / value initialization)
 eg- var firstName = "diya"
     var firstName = "yadi"
 3. var is function scope
+4. var is hoisted
+
  LET-
 1. var is used to declare variable which values can be changed overtime the program
 2- re- declaration of variableis not possible. 
 3. let is block scope
+4. let is not hoisted
 
  CONST- 
 1. it is used to declare constant variables. it means the value stored in the variable declared with const shouldnot and cannot be changed overtime throughout thr program.
     variable declaration only is not possible in constant. eg- PI=3.14, PI=5 (not valid to re-assign value in constant variables)
 2- re- declaration of variable is not possible. 
-3. const is block scope*/
+3. const is block scope
+4. const is hoisted*/
 
 /* Function scope vs block scope
 scope-
@@ -53,7 +57,7 @@ block scope- other all scope are block scope
 eg- if (true){
 
 }
-
+*/
 
 
 
