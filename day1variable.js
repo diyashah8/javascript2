@@ -9,10 +9,10 @@ variableType variableName (identifer)=value
 for eg: let x=5;
 there is certain set of rules to write an identifier in js.
 2. it cannot be start using number  special symbols.
-3.the identifiers are case sensative. it means a and A are two different variablesNames. 
+3.the identifiers are case sensative. it means a and A are two different variablesNames.
 eg- let f="Apple"
-    let F = "Apple" 
-    both f and F are different variables     
+    let F = "Apple"
+    both f and F are different variables
 4. reversed key are not used. reverse key = if, else, for, while, do, dowhile
 
 B. standard convension for writing variables
@@ -24,7 +24,7 @@ C. The identifier must descriptive and related the value it holds eg-let x=5, le
 /*var vs let vs const
 
  VAR-
-1. var is used to declare variable which values can be changed overtime the program 
+1. var is used to declare variable which values can be changed overtime the program
 eg-  x = 4 (value assign / value initialization)
      x = 6 ( value re-assign)
 2- re- declaration of variable is possible.
@@ -35,14 +35,14 @@ eg- var firstName = "diya"
 
  LET-
 1. var is used to declare variable which values can be changed overtime the program
-2- re- declaration of variableis not possible. 
+2- re- declaration of variableis not possible.
 3. let is block scope
 4. let is not hoisted
 
- CONST- 
+ CONST-
 1. it is used to declare constant variables. it means the value stored in the variable declared with const shouldnot and cannot be changed overtime throughout thr program.
     variable declaration only is not possible in constant. eg- PI=3.14, PI=5 (not valid to re-assign value in constant variables)
-2- re- declaration of variable is not possible. 
+2- re- declaration of variable is not possible.
 3. const is block scope
 4. const is hoisted*/
 
@@ -58,6 +58,7 @@ eg- if (true){
 
 }
 */
+//javascript is backward compatible language.
 
 
 
