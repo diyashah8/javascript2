@@ -15,13 +15,13 @@
  3. Function */
 
 let num1 = 9
-let firsyname = "diya"
 console.log(typeof (num1))
-console.log(typeof (num1))
+let firstName = 'diya'
+console.log(typeof (firstName))
 
 
 //JS is dynamically typed programming language, it means that value of variable can change at runtime.
-eg - let x = 9
-x = 'hello'  // it is possible
+//eg - let x = 9
+//x = 'hello'  // it is possible
 
 
