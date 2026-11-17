@@ -1,12 +1,12 @@
-// Globlal variable vs local variable
+// Global variable vs local variable
 /* 
 1. globlal variable: those variables which are openly declaired on the globlal scope or outside of any function or block are khown as globlal variables.
-variables define in globlal scope can be accessed anywhere within the programs.*/
-eg - x = 1; //it is declared in global scope. (used anywhere) 
+variables define in globlal scope can be accessed anywhere within the programs.
+eg x = 1; //it is declared in global scope. (used anywhere) 
 
 /*2. local variables: those variables which are  declaired inside of a function or a block scope are khown as local variables.  
 variables define in local scope can be accessed only inside that particular scope. 
-local variables takes precendence over globlal variables in javascripts.*/
+local variables takes precendence over globlal variables in javascripts.
 if (true) {
     let x = 6;
     console.log(x)
@@ -16,32 +16,33 @@ if (true) {
     console.log(x)
 } (x = 1) // because first value is 1 as it is global varible so it takes precedence.
 
-let x; //variable declaration
+let X; //variable declaration
 console.log(x) //undefined
-let x = 3;
+
+let X = 3;
 console.log(x) //3
 
 
 /*Hosting literal meaning -> to pull something to the top.
 Hosting in javascript -> it is the deault behaviour of javascript to raise variables 
-declared with var and funtion declarations to the top of the scope where it was defined.*/
+declared with var and funtion declarations to the top of the scope where it was defined.
 
 console.log(x)
 let x; // error
 
 console.log(x)
-var x; // undefined
+var X; // undefined
 
 console.log(x) // undefined
-var x = 10;
-console.log(x) // 10
+var X = 10;
+console.log(x) // 10 */
 
 //exercise 
 var sport = 'football'
 function func1() {
     let messi = 10;
     if (true) {
-        console.log(messi) // valid due to hosting
+        console.log(messi) // valid 
         console.log(ronaldo) // valid // undefined
         var ronaldo = 7;
         let messiInPSG = 30;
@@ -60,18 +61,18 @@ console.log(sport) // invalid
 
 
 /* Temporal Dead (TDZ) Zone
-it is the region where the variable define can't be accessed. used let and const only
+it is the region where the variable define can't be accessed. 
 
 //why not to use var?
-1. var is hosted
+1. var is hoisted
 2. variable declared with var can be declared again 
 3. var is function scoped
-4. variable defined with var is attached to the window object. */
+4. variable defined with var is attached to the window object. 
 
 
 // variables- it is a container that stores value or expression 
-let x = 9  //number
-let fruit = apple // string
+let X = '9'  //number
+let fruit = 'apple' // string
 
 // expression vs statements
 // expression- it is somethings that will eventually resolve to a value 
@@ -82,8 +83,8 @@ console.log(y)
 // -,+,/, - operators   // expression
 
 // statements- it is a block of code that performs an action. it stores values and expression.
-let z = if (true) {
+let Z = if (true) {
     console.log('hello')
-}
+}*/
 
 
