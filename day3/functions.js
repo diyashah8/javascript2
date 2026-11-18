@@ -25,6 +25,7 @@ saysHello('kajal')
 function calcAge(birthYear) {
     const thisYear = 2026
     console.log(2026 - birthYear)
+    return `you are $(age) old years this year`
 }
 calcAge(2004)
 calcage(2003)
