@@ -24,12 +24,47 @@ saysHello('kajal')
 // eg: Create a function that calculates your age
 function calcAge(birthYear) {
     const thisYear = 2026
-    console.log(2026 - birthYear)
-    return `you are $(age) old years this year`
+    const age = 2026 - birthYear
+    console.log(`you are ${age} years old this year`)
+    return `your are   beautiful`
 }
-calcAge(2004)
-calcage(2003)
+// when there is no return keywords in the function it will return undefined
+const ourAge = calcAge(2004)
+console.log(ourAge)
+calcAge(2003)
 
-// 2. function Expression
+// eg: show hello diya you are 21 years old
+function calcAgeWithName(name, birthyear) {
+    const thisYear1 = 2026
+    const age = thisYear1 - birthyear
+    console.log(`hello ${name} you are ${age} year old`)
+}
+calcAgeWithName('diya', 2004)
+
+// 2. function Expression: variableType functionName =(assignment operator) function(){}
+let greeting = function () {
+    return ('Hello World')
+}
+let x = greeting()
+console.log(x)
+
+let greetingg = function () {
+    return ('Hello World')
+}
+console.log(greetingg())
+
 // 3. Arrow Function (ES6+)
+// It is a shorthand way to create a function. 
+// Syntax:
+//variable_type functionName =() => {}
 
+const prayer = () => console.log('ohh god')
+
+prayer()
+
+//parameterized Arrow Function
+const greetingwithName = (name) => console.log(`hello ${name}`)
+greetingwithName('diya')
+greetingwithName('darpan')
+greetingwithName('sita')
+greetingwithName('mahendra')
