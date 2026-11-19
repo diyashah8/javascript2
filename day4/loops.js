@@ -37,4 +37,17 @@ for (let i = 1; i <= 30; i++) {
 }
 
 //2. while loop
+// It is the type of loop which is used to do interaction when developers don't khow the numbers of beforehand.
+//syntax of while loop 
+// while(condition){
+// code to be exceuted when the code is true}
+
+// print numbers from 0 to 4
+let i = 5
+while (i < 5) {
+    consolele.log(i)
+    i++
+}
+
+
 //3. do -while loop 
