@@ -43,11 +43,44 @@ for (let i = 1; i <= 30; i++) {
 // code to be exceuted when the code is true}
 
 // print numbers from 0 to 4
-let i = 5
+let i = 0
 while (i < 5) {
-    consolele.log(i)
+    console.log(i)
     i++
 }
 
+//print first 20 number using loops
+let q = 0
+while (q <= 20) {
+    console.log(q)
+    q++
+}
+//print first 20 even number using loops
+let a = 2
+while (a <= 20) {
+    if (a % 2 === 0)
+        console.log(a)
+    a++
+}
 
-//3. do -while loop 
+// Infinite while loop
+// while(true){
+//statement here will be executed}
+/* eg- let s = 0
+while (s < 5) {
+    console.log(s)
+}*/
+
+//3. do -while loop
+// It is the type of loop which is similar to while loop but it executes the code 1 times before cheaking the conditions.
+/*Syntax:
+do{
+code to be exement
+}while (condition)*/
+
+// print no. from 0 to 4
+let z = 0
+do {
+    console.log(z)
+    z++
+} while (z < 5)
