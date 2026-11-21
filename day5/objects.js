@@ -13,7 +13,7 @@ const person = {
     isMarried: false,
     age: (thisYear) => thisYear - person.birthYear
 }
-// diya shah was born on 2004. he is ... years old. she is not married.
+// diya shah was born on 2004. she is ... years old. she is not married.
 console.log(`${person.firstName} ${person.lastName} was born on ${person.birthYear}. She is ${person.age(2026)} years old and she is ${person.isMarried ? 'married' : 'unmarried'} till date.`)
 
 // firstName is the key or property and 'diya' is the value
