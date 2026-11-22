@@ -76,7 +76,7 @@ let names = ['ram', 'shyam', 'gita', 'hari', 'sita']
 names.unshift('ami',)
 console.log(names)
 
-//shift -> It removes the first elements of an array.
+//shift-> It removes the first elements of an array.
 names.shift()
 console.log(names)
 
