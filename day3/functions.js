@@ -1,12 +1,8 @@
 /* functions: a function is basically a block of code that can execute a specific task. the value or action performed by a function can be achieved when we call or invoke a function. 
  A function consists of a function name (to write function names we have to follow the rules of writing identifires). A function contains a paranthesis whwer parameters can be contained.
- In js, there are 3 ways to declared a function. They are
- 1. Function declaration
-/* syntax: 
-function functionName(){
-    code to be executed
-}
-    for eg: Create a function that says hello world */
+ In js, there are 3 ways to declared a function. They are */
+// 1. Function declaration - syntax: function functionName(){ code to be executed}
+//for eg: Create a function that says hello world 
 function greetings() {
     console.log('Hello World')
 }
