@@ -64,3 +64,34 @@ greetingwithName('diya')
 greetingwithName('darpan')
 greetingwithName('sita')
 greetingwithName('mahendra')
+
+const calcagewithName = (name, birthyear) => console.log(`hello ${name}, you are ${2026 - birthyear}`)
+calcagewithName('shyam', 2000)
+
+// create and arrow function that returns the sum of two numbers.
+const sum = (num1, num2) => { return num1 + num2 }
+console.log(`The sum of num1 and num 2 is ${21 + 22}`)
+
+// create a function that takes a number and returnes true if the number
+//  is even and returns false if the number is odd.
+const isEven = (num) => {
+    if (num % 2 === 0) {
+        return true
+    } else {
+        return false
+    }
+}
+console.log(`It is ${isEven(5)}`)
+
+// create a function to cheak when were you 16 years old.
+// 14-> you'll be 16 in 3 years
+// 19-> you were  16 3 years ago
+// 16-> you're sweet 16
+
+const check = (age) => age >= 16 ?
+    (age > 16 ? `you were 16 ${age - 16}years ago` : `you are 16 years old`)
+    : `you will be 16 in ${16 - age}years`
+console.log(check(11))
+console.log(check(16))
+console.log(check(19))
+
