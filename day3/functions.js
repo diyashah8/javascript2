@@ -70,7 +70,7 @@ calcagewithName('shyam', 2000)
 
 // create and arrow function that returns the sum of two numbers.
 const sum = (num1, num2) => { return num1 + num2 }
-console.log(`The sum of num1 and num 2 is ${21 + 22}`)
+console.log(`The sum of num1 and num2 is ${21, 22}`)
 
 // create a function that takes a number and returnes true if the number
 //  is even and returns false if the number is odd.
