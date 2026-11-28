@@ -80,3 +80,271 @@ console.log(names)
 names.shift()
 console.log(names)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// number of letters -"a"
+let name = 'shiva parsad chapagain'
+let strToArr = [...name]
+let mappedArrOfStr = strToArr.map(e => {
+    if (e === 'a') {
+        return 1
+    }
+    else {
+        return 0
+    }
+})
+console.log(mappedArrOfStr)
+let output = mappedArrOfStr.reduce((acc, curr) => acc + curr)
+console.log(output)
+
+// method chaining
+let output1 = [...name].map(e => {
+    if (e === 'a') {
+        return 1
+    }
+    else {
+        return 0
+    }
+}).reduce((acc, curr) => acc + curr)
+
+console.log(output)
+
+let output2 = [...name].reduce((acc, curr) => {
+    if (curr === 'a' || curr === 'A') {
+        acc++
+    }
+    return acc
+}, 0)
